@@ -1,0 +1,36 @@
+# node.js関連
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# macOS
+.DS_Store
+.AppleDouble
+
+# VSCode
+.vscode/
+
+# その他のエディタ
+*.sublime-project
+*.sublime-workspace
+
+# バックアップファイル
+*~
+*.swp
+
+# ログファイル
+*.log
+
+# 一時ファイル
+tmp/
+temp/
+
+# Buildファイル
+dist/

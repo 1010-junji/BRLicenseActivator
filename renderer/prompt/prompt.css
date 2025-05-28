@@ -1,0 +1,78 @@
+:root {
+  /* Color Palette */
+  --color-primary-green: #369239; /* "Open" button background */
+  --color-secondary-gray: #ccc;   /* "Cancel" button background */
+  --color-text-light: #fff;       /* Text color for dark backgrounds */
+  --color-text-dark: #333;       /* Default text color for body */
+
+  /* Typography */
+  --font-family-default: sans-serif;
+  --font-size-base: 1em;
+
+  /* Spacing & Sizing */
+  --spacing-unit: 1em;
+  --input-padding: 0.2em;
+  --button-padding-vertical: 0.3em;
+  --button-padding-horizontal: 1em;
+  --input-width-offset: 10px; /* for calc(100% - 10px) */
+
+  /* Borders */
+  --border-radius-default: 4px;
+
+  /* Opacity */
+  --opacity-disabled: 0.5;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-default);
+  color: var(--color-text-dark);
+  font-size: var(--font-size-base);
+}
+
+#container {
+  padding: var(--spacing-unit);
+}
+
+label {
+  display: block;
+  margin-bottom: calc(var(--spacing-unit) * 0.3);
+}
+
+input[type="url"] {
+  width: calc(100% - var(--input-width-offset));
+  padding: var(--input-padding);
+  font-size: var(--font-size-base);
+  box-sizing: border-box; /* Recommended for easier width management */
+}
+
+.buttons {
+  margin-top: var(--spacing-unit);
+  text-align: right;
+}
+
+button {
+  padding: var(--button-padding-vertical) var(--button-padding-horizontal);
+  font-size: var(--font-size-base);
+  margin-left: calc(var(--spacing-unit) * 0.5);
+  border: none;
+  border-radius: var(--border-radius-default);
+  cursor: pointer;
+}
+
+button#open {
+  background-color: var(--color-primary-green);
+  color: var(--color-text-light);
+}
+
+button#open:disabled {
+  opacity: var(--opacity-disabled);
+  cursor: default;
+}
+
+button#cancel {
+  background-color: var(--color-secondary-gray);
+  /* Consider text color for cancel button if default is not suitable:
+     color: var(--color-text-dark);
+  */
+}

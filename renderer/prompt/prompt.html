@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>開くページの URL を入力</title>
+  <link rel="stylesheet" href="prompt.css">
+</head>
+<body>
+  <div id="container">
+    <label for="urlInput">URL:</label>
+    <input type="url" id="urlInput" value="http://localhost:50080" />
+    <div class="buttons">
+      <button id="cancel">キャンセル</button>
+      <button id="open" disabled>開く</button>
+    </div>
+  </div>
+  <script src="prompt.js" defer></script>
+</body>
+</html>

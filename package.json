@@ -1,0 +1,22 @@
+{
+  "name": "license-window",
+  "version": "0.1.0",
+  "description": "License Window for Bizrobo MC",
+  "author": "Bizrobo",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^36.2.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.bizrobo.cxg.license-window",
+    "win": {
+      "target": "portable",
+      "icon": "lw.png"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+/* c:\Users\oishi\Documents\sampleTool\license-window\error.css */
+:root {
+  /* Color Palette */
+  --color-error-text: #c00; /* h1 color */
+  --color-text-default: #333; /* Default text color */
+
+  /* Typography */
+  --font-family-default: sans-serif;
+  --font-size-base: 1em;
+
+  /* Spacing & Sizing */
+  --spacing-unit: 1em;
+  --page-padding: calc(var(--spacing-unit) * 2);
+  --button-padding-vertical: calc(var(--spacing-unit) * 0.5);
+  --button-padding-horizontal: var(--spacing-unit);
+  --info-margin-top: var(--spacing-unit);
+  --button-margin-top: calc(var(--spacing-unit) * 1.5);
+}
+
+body {
+  font-family: var(--font-family-default);
+  text-align: center;
+  padding: var(--page-padding);
+  color: var(--color-text-default);
+  font-size: var(--font-size-base);
+}
+
+h1 {
+  color: var(--color-error-text);
+}
+
+.info {
+  margin-top: var(--info-margin-top);
+  text-align: left;
+  display: inline-block; /* To center the dl block itself if body is text-align:center */
+}
+
+.info dt {
+  font-weight: bold;
+}
+
+button {
+  margin-top: var(--button-margin-top);
+  padding: var(--button-padding-vertical) var(--button-padding-horizontal);
+  cursor: pointer; /* Added for better UX */
+  /* Consider adding default button styling like border, background-color if needed */
+}
