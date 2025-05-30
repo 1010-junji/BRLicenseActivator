@@ -11,6 +11,7 @@
 
   /* Spacing & Sizing */
   --spacing-unit: 1em;
+  --spacing-unit-small: 0.5em;
   --input-padding: 0.2em;
   --button-padding-vertical: 0.3em;
   --button-padding-horizontal: 1em;
@@ -75,4 +76,11 @@ button#cancel {
   /* Consider text color for cancel button if default is not suitable:
      color: var(--color-text-dark);
   */
+}
+
+.remark {
+  font-size: 0.9em;
+  font-weight: bold;
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-unit-small);
 }

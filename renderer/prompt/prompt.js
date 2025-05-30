@@ -13,8 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
       if (!str || str.trim() === "") {
         return false;
       }
-      new URL(str);
-      return true;
+      const parsedURL = new URL(str);
+      // ホスト名が localhost であることを確認
+      return parsedURL.hostname === "localhost" || parsedURL.hostname === "::1";
     } catch {
       return false;
     }

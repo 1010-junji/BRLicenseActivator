@@ -45,7 +45,7 @@ function createMainWindow(targetURL) {
 function showPrompt() {
   promptWin = new BrowserWindow({
     width: 520,
-    height: 190,
+    height: 210,
     resizable: false,
     autoHideMenuBar: true,
     webPreferences: {
