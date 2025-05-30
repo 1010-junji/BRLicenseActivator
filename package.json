@@ -1,7 +1,7 @@
 {
-  "name": "license-window",
-  "version": "0.1.0",
-  "description": "License Window for Bizrobo MC",
+  "name": "br-license-activator",
+  "version": "0.2.0",
+  "description": "License Activator for Bizrobo MC",
   "author": "Bizrobo",
   "main": "main.js",
   "scripts": {
@@ -13,7 +13,7 @@
     "electron-builder": "^26.0.12"
   },
   "build": {
-    "appId": "com.bizrobo.cxg.license-window",
+    "appId": "com.bizrobo.cxg.license-activator",
     "win": {
       "target": "portable",
       "icon": "lw.png"
